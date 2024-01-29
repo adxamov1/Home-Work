@@ -1,0 +1,55 @@
+.wrapper{
+width:1000px;
+height: 1600px;
+border: 1x solid #000;
+margin: 0 auto;
+background-image: linear-gradient(-45deg, #bbb 0 50%, #eee 50% 100%);
+position: relative;
+z-index: 1;
+}
+.box{
+width: 500px;
+height: 500px;
+background-color: #fff;
+margin: 0 auto;
+margin-top: 40px;
+position: relative;
+background-image: url('https://chevrolet.uz/assets/images/cobalt/colours/1.png');
+}
+.box::before{
+position: absolute;
+bottom: 30px;
+left: -40px;
+z-index: -1;
+content: "";
+display: block;
+background-color: transparent;
+height: 100%;
+width: 50%;
+transform: rotate(-15deg);
+box-shadow:  10px 100px 50px -50px #000;
+}
+
+.box::after{
+position: absolute;
+bottom: 30px;
+right: -40px;
+z-index: -1;
+content: "";
+display: block;
+background-color: transparent;
+height: 100%;
+width: 50%;
+transform: rotate(-15deg);
+box-shadow:  10px 100px 50px -50px #000;
+
+}
+.box:nth-child(1){
+    margin-top: 60px;
+    background-image: url('https://chevrolet.uz/assets/images/lacetti/colors/2.png');
+}
+.box:nth-child(3){
+    background-image: url('https://crc.uz/wp-content/uploads/2020/10/nexia-3.png');
+    height: 400px;
+    
+}
